@@ -1,0 +1,11 @@
+[user]
+	name = TehBrian
+	email = tehbrian@protonmail.com
+[core]
+	editor = vim
+	autocrlf = input
+[alias]
+	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
+    plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	
+
