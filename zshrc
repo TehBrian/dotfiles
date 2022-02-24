@@ -26,12 +26,10 @@ export PATH="/usr/local/opt/bison/bin:$PATH"
 # Multiple versions of Java.
 #export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 #export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-#export JAVA_16_HOME=$(/usr/libexec/java_home -v16)
 export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
 
 #alias java8='export JAVA_HOME=$JAVA_8_HOME'
 #alias java11='export JAVA_HOME=$JAVA_11_HOME'
-#alias java16='export JAVA_HOME=$JAVA_16_HOME'
 alias java17='export JAVA_HOME=$JAVA_17_HOME'
 
 # Default Java
