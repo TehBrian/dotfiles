@@ -17,30 +17,20 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="/usr/local/opt/bison/bin:$PATH"
 
 # Multiple versions of Java.
+
 #export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 #export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+#export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+export JAVA_18_HOME=$(/usr/libexec/java_home -v18)
 
 #alias java8='export JAVA_HOME=$JAVA_8_HOME'
 #alias java11='export JAVA_HOME=$JAVA_11_HOME'
-alias java17='export JAVA_HOME=$JAVA_17_HOME'
+#alias java17='export JAVA_HOME=$JAVA_17_HOME'
+alias java18='export JAVA_HOME=$JAVA_18_HOME'
 
-# Default Java
-java17
-
-# Ruby stuff
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
-export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-
-# Homebrew told me to do this
-export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
-export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
-export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
+# Default to Java 18.
+#java18

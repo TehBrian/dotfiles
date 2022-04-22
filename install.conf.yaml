@@ -1,9 +1,9 @@
-- clean: ['~']
+- clean:
+    ~/:
+        #force: true
 
 - link:
     ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
-
-
