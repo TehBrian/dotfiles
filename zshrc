@@ -13,6 +13,9 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Source plugins.
+source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh
+
 # Multiple versions of Java.
 #export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 #export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
