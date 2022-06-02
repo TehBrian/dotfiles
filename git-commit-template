@@ -1,0 +1,33 @@
+# Prioritize keeping the git history clean and maintainable. Use common sense.
+#
+# Template:
+#
+#     <type>(<scope>): <subject>
+#
+#     <body>
+#
+#     <footer>
+#
+# The HEADER is the first line. Keep it short and sweet. It contains:
+# - Type    : the kind of commit.
+# - Scope   : the area of code touched by the commit. This is optional.
+# - Subject : a short description for the commit. Follow these guidelines:
+#   - imperative; present tense
+#   - lowercase first letter
+#   - no dot at the end
+# The BODY is a longer description for the commit. Include motivation,
+# previous behavior, and other relevant information.
+# The FOOTER includes BREAKING CHANGE warnings, GitHub issue references,
+# and other code-like information.
+#
+# Common Types:
+# - feat     : adds a feature
+# - fix      : fixes a bug
+# - refactor : cleans code without changing behavior
+# - chore    : maintaienances (dependencies, copyright)
+# - perf     : improves performance
+# - style    : improves code style (whitespace, formatting)
+# - build    : project build logic
+# - lang     : user-facing language
+# - docs     : programmer documentation (Javadocs, README, etc)
+# - test     : modifies tests

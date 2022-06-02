@@ -6,4 +6,5 @@
     ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
+    ~/.git-commit-template: git-commit-template
     ~/.zshrc: zshrc
