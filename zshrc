@@ -31,5 +31,5 @@ java17
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/zip/bin:$PATH"
 
-
-
+alias cat="bat --paging=never --theme=Nord --style=plain"
+alias ls="exa --git --group-directories-first"
