@@ -11,5 +11,5 @@
 	defaultBranch = main
 [credential]
 	helper = osxkeychain
-[commit]
-	template = /Users/tehbrian/.git-commit-template
+#[commit]
+#	template = /Users/tehbrian/.git-commit-template
