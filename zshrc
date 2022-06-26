@@ -31,8 +31,5 @@ java17
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/zip/bin:$PATH"
 
-# melee.sh, hell yeah!
-source ~/stuff/code/other/melee.sh/melee.sh
-
 # Ctrl+E to pipe previous command to less. reddit.com/ugvh2p
 bindkey -s "^e" '!!^Xa | less'
