@@ -27,12 +27,12 @@ alias java18='export JAVA_HOME=$JAVA_18_HOME'
 # Default to Java 17.
 java17
 
-# Add Ruby to PATH.
+# Path-adding.
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/zip/bin:$PATH"
 
 # melee.sh, hell yeah!
 source ~/stuff/code/other/melee.sh/melee.sh
 
 # Ctrl+E to pipe previous command to less. reddit.com/ugvh2p
 bindkey -s "^e" '!!^Xa | less'
-
