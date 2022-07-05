@@ -8,3 +8,4 @@
     ~/.gitconfig: gitconfig
     ~/.git-commit-template: git-commit-template
     ~/.zshrc: zshrc
+    ~/.nanorc: nanorc
