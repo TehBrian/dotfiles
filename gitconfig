@@ -1,6 +1,7 @@
 [user]
 	name = TehBrian
-	email = tehbrian@protonmail.com
+	email = tehbrian@proton.me
+	signingkey = 3AA5C34371567BD2
 [core]
 	editor = vim
 	autocrlf = input
