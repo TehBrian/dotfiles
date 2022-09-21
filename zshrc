@@ -16,18 +16,6 @@ fi
 # Source plugins.
 source ~/.zplugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-# Multiple versions of Java.
-export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
-export JAVA_18_HOME=$(/usr/libexec/java_home -v18)
-alias java17='export JAVA_HOME=$JAVA_17_HOME'
-alias java18='export JAVA_HOME=$JAVA_18_HOME'
-
-# Default to Java 17.
-java17
-
-# Path-adding.
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/opt/zip/bin:$PATH"
-
+# Average Rust user rewriting standard programs.
 alias cat="bat --paging=never --theme=Nord --style=plain"
 alias ls="exa --git --group-directories-first"
