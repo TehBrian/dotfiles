@@ -19,3 +19,8 @@ source ~/.zplugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 # Average Rust user rewriting standard programs.
 alias cat="bat --paging=never --theme=Nord --style=plain"
 alias ls="exa --git --group-directories-first"
+
+# Initialize pyenv.
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
