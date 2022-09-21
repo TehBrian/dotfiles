@@ -1,14 +1,18 @@
 [user]
 	name = TehBrian
 	email = tehbrian@proton.me
-	signingkey = 3AA5C34371567BD2
+	signingkey = B4255C09
 [core]
-	editor = vim
+	editor = nano
 	autocrlf = input
+[init]
+	defaultBranch = main
 [alias]
 	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-first-ish commit}\");};f"
 	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[init]
-	defaultBranch = main
 [credential]
 	helper = osxkeychain
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg
+[commit]
+	gpgsign = true
