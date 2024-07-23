@@ -16,6 +16,24 @@ fi
 # Source plugins.
 source ~/.zplugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
+# Path-adding.
+export PATH="/Users/brian/.deno/bin:$PATH" # Deno
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH" # Ruby
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH" # Tkinter
+
+# Multiple Java versions.
+java-v() {
+	export JAVA_HOME="`/usr/libexec/java_home -v $1`"
+	export PATH="`/usr/libexec/java_home -v $1`/bin:$PATH"
+}
+
+java8() { java-v 1.8; }
+java17() { java-v 17; }
+java21() { java-v 21; }
+java22() { java-v 22; }
+
+java22
+
 # Average Rust user rewriting standard programs.
 alias cat="bat --paging=never --theme=Nord --style=plain"
 alias ls="exa --git --group-directories-first"

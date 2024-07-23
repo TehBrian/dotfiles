@@ -1,18 +1,24 @@
 [user]
-	name = TehBrian
-	email = tehbrian@proton.me
-	signingkey = B4255C09
+name = TehBrian
+email = tehbrian@proton.me
+signingkey = B4255C09
+
 [core]
-	editor = nano
-	autocrlf = input
+editor = nano
+autocrlf = input
+
 [init]
-	defaultBranch = main
+defaultBranch = main
+
 [alias]
-	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-first-ish commit}\");};f"
-	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[credential]
-	helper = osxkeychain
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg
+squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-first-ish commit}\");};f"
+plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [commit]
-	gpgsign = true
+gpgsign = true
+
+[gpg]
+program = /usr/local/MacGPG2/bin/gpg
+
+[credential]
+helper = osxkeychain
