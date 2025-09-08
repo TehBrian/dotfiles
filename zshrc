@@ -36,7 +36,7 @@ java22
 
 # Average Rust user rewriting standard programs.
 alias cat="bat --paging=never --theme=Nord --style=plain"
-# alias ls="eza --git --group-directories-first"
+alias ls="eza --git --group-directories-first"
 
 # Initialize pyenv.
 export PYENV_ROOT="$HOME/.pyenv"
@@ -45,3 +45,4 @@ eval "$(pyenv init -)"
 
 # Disable annoying autocorrect prompt.
 unsetopt correct
+
